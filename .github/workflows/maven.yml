@@ -14,9 +14,9 @@ jobs:
     name: fetching branch name
     runs-on: ubuntu-latest
     steps:
+    - uses: tj-actions/branch-names@v6
     - name: Get branch name
       id: branch-name
-      uses: tj-actions/branch-names@v6
  
     
   build:
